@@ -1,0 +1,115 @@
+
+{
+  "name": "My App",
+  "description": "My elevator pitch goes here",
+  "launch_path": "/",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Your name or organization",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "en"
+}
+MANIFEST REFERENCE
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest
+deep dive
+into
+"" API ""
+
+
+// Telephony object
+var tel = navigator.mozTelephony;
+
+
+// Check if the phone is muted (read/write property)
+console.log(tel.muted);
+
+
+// Check if the speaker is enabled (read/write property)
+console.log(tel.speakerEnabled);
+
+
+
+
+// Place a call
+
+var cal = tel.dial(“123456789”);
+
+// SMS object
+
+var sms = navigator.mozSMS;
+
+// Send a message
+sms.send("123456789", "Hello world!");
+
+
+
+// Recieve a message
+sms.onreceived = function (event) {
+
+// Read message
+console.log(event.message);
+};
+
+
+// Vibrate for one second
+navigator.mozVibrate(1000);
+
+
+// Vibration pattern [vibrationTime, pause,…]
+navigator.mozVibrate([200, 100, 200, 100]);
+
+
+// Vibrate for 5 seconds
+navigator.mozVibrate(5000);
+
+
+// Turn o? vibration
+navigator.mozVibrate(0);
+
+
+var contact = new mozContact();
+contact.init({name: "Tom"});
+var request = navigator.mozContacts.save(contact);
+
+
+
+request.onsuccess = function() {
+   console.log("Success");
+
+
+
+request.onerror = function() {
+ console.log("Error")
+
+/ Portrait mode:
+screen.mozLockOrientation("portrait");
+
+
+/*
+    Possible values:
+        "landscape"
+        "portrait"
+        "landscape-primary"
+       "landscape-secondary"
+           "portrait-primary"
+        "portrait-secondary"
+*/
+
+
+var connection = window.navigator.mozConnection,
+
+
+
+    online = connection.bandwidth > 0,
+
+
+
+    metered = connectrion.metered;
+
+

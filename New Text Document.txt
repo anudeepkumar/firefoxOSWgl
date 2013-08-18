@@ -1,0 +1,4 @@
+resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/data/content/index.html
+
+
+http://jaipradeesh.github.io/fxosappdev

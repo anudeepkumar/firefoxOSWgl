@@ -1,0 +1,13 @@
+{
+  "name": "Hello",
+  "description": "My elevator pitch goes here",
+  "launch_path": "/hello.html",
+  "icons": {
+    "128": "hello.png"
+  },
+  "developer": {
+    "name": "Your name or organization",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "en"
+}

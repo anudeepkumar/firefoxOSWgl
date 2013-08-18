@@ -1,0 +1,12 @@
+{
+  "name":"Hit the Dot",
+  "description":"It is a game",
+  "launch_path":"/new1.html",
+  "icons":{
+    "128":"/kk.png"
+  },
+  "developer":{
+    "name":"Anudeep and Sravn"
+  },
+  "default_locale": "en"
+}
